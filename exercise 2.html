@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tryRemoteFromArray(arr,n) {
+        for(let i=0;i<arr.length;i++){
+            let check=(arr[i]===n);
+            if(check){
+                arr.splice(i,1);
+            }
+        }
+        console.log(arr)
+    }
+    let arr1=[12,6,3,7,21,5,7];
+    let arr2=[12,6,3,7,21,5,7];
+    let arr3=[12,6,3,7,21,5,7];
+    let arr4=[12,6,3,4,21,5,7];
+    tryRemoteFromArray(arr1,2);
+    tryRemoteFromArray(arr2,12);
+    tryRemoteFromArray(arr3,7);
+    tryRemoteFromArray(arr4,7);
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

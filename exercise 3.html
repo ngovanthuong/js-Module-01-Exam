@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function printFibonacci(n) {
+        let number1=0;
+        let number2=1;
+        let sum=0;
+        while (number1<n) {
+            sum = number1;
+            number1=number1+number2;
+            number2 = sum;
+            console.log(sum +" ");
+        }
+    }
+    printFibonacci(12);
+    printFibonacci(25);
+</script>
+</body>
+</html>

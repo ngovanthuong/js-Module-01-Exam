@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMaxScore(arr) {
+        let max=0;
+        for(let i=0;i<arr.length;i++){
+            let check=(max<arr[i]);
+            if(check){
+                max=arr[i]
+            }
+        }
+       return max;
+    }
+    let arr1=[10,5,2,8,-1,6,8];
+    let arr2=[2,4,0,5,1];
+    let arr3=[-8,-6,-2,-6,-1,-1,-4];
+    console.log("max arr1: " + findMaxScore(arr1));
+    console.log("max arr2: " + findMaxScore(arr2));
+    console.log("max arr3: " + findMaxScore(arr3));
+</script>
+</body>
+</html>
